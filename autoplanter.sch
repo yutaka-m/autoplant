@@ -63,12 +63,12 @@ $EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 5EB85027
-P 4600 4750
-F 0 "BT1" H 4708 4796 50  0000 L CNN
-F 1 "Battery" H 4708 4705 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4600 4810 50  0001 C CNN
-F 3 "~" V 4600 4810 50  0001 C CNN
-	1    4600 4750
+P 4600 5200
+F 0 "BT1" H 4708 5246 50  0000 L CNN
+F 1 "Battery" H 4708 5155 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 4600 5260 50  0001 C CNN
+F 3 "~" V 4600 5260 50  0001 C CNN
+	1    4600 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -130,23 +130,23 @@ $EndComp
 $Comp
 L Device:Solar_Cell SC1
 U 1 1 5EB83749
-P 650 5400
-F 0 "SC1" H 758 5496 50  0000 L CNN
-F 1 "Solar_Cell" H 758 5405 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 650 5460 50  0001 C CNN
-F 3 "~" V 650 5460 50  0001 C CNN
-	1    650  5400
+P -100 5400
+F 0 "SC1" H 8   5496 50  0000 L CNN
+F 1 "Solar_Cell" H 8   5405 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V -100 5460 50  0001 C CNN
+F 3 "~" V -100 5460 50  0001 C CNN
+	1    -100 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:DIODE D5
 U 1 1 5EB84914
-P 900 4700
-F 0 "D5" H 900 4965 50  0000 C CNN
-F 1 "DIODE" H 900 4874 50  0000 C CNN
-F 2 "SamacSys_Parts:DIONM7959X282N" H 900 4700 50  0001 C CNN
-F 3 "~" H 900 4700 50  0001 C CNN
-	1    900  4700
+P 150 4700
+F 0 "D5" H 150 4965 50  0000 C CNN
+F 1 "DIODE" H 150 4874 50  0000 C CNN
+F 2 "SamacSys_Parts:DIONM7959X282N" H 150 4700 50  0001 C CNN
+F 3 "~" H 150 4700 50  0001 C CNN
+	1    150  4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -238,11 +238,9 @@ F 3 "~" H 1350 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	650  5200 650  4700
+	-100 5200 -100 4700
 Wire Wire Line
-	650  4700 700  4700
-Wire Wire Line
-	1100 4700 1200 4700
+	-100 4700 -50  4700
 Wire Wire Line
 	1200 4750 1200 4700
 Connection ~ 1200 4700
@@ -270,12 +268,8 @@ Connection ~ 4050 4450
 Wire Wire Line
 	4200 5850 4600 5850
 Wire Wire Line
-	4600 5850 4600 4950
+	4600 5850 4600 5400
 Connection ~ 4200 5850
-Wire Wire Line
-	4600 4550 4600 4450
-Wire Wire Line
-	4600 4450 4200 4450
 Connection ~ 4200 4450
 Wire Wire Line
 	3350 5950 3950 5950
@@ -408,7 +402,7 @@ F 3 "" H 1200 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 5050 1200 4950
+	1200 5050 1200 5000
 Wire Wire Line
 	1400 6750 1400 6650
 Wire Wire Line
@@ -416,16 +410,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0103
 U 1 1 5EBB537C
-P 650 5600
-F 0 "#PWR0103" H 650 5350 50  0001 C CNN
-F 1 "GND" H 655 5427 50  0000 C CNN
-F 2 "" H 650 5600 50  0001 C CNN
-F 3 "" H 650 5600 50  0001 C CNN
-	1    650  5600
+P -100 5600
+F 0 "#PWR0103" H -100 5350 50  0001 C CNN
+F 1 "GND" H -95 5427 50  0000 C CNN
+F 2 "" H -100 5600 50  0001 C CNN
+F 3 "" H -100 5600 50  0001 C CNN
+	1    -100 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	650  5500 650  5600
+	-100 5500 -100 5600
 Wire Wire Line
 	8250 4250 8200 4250
 Wire Wire Line
@@ -498,29 +492,25 @@ Connection ~ 7450 4350
 $Comp
 L power:+BATT #PWR0106
 U 1 1 5EBD5D7D
-P 5400 4400
-F 0 "#PWR0106" H 5400 4250 50  0001 C CNN
-F 1 "+BATT" H 5415 4573 50  0000 C CNN
-F 2 "" H 5400 4400 50  0001 C CNN
-F 3 "" H 5400 4400 50  0001 C CNN
-	1    5400 4400
+P 6750 4450
+F 0 "#PWR0106" H 6750 4300 50  0001 C CNN
+F 1 "+BATT" H 6765 4623 50  0000 C CNN
+F 2 "" H 6750 4450 50  0001 C CNN
+F 3 "" H 6750 4450 50  0001 C CNN
+	1    6750 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-BATT #PWR0107
 U 1 1 5EBD619D
-P 4650 5850
-F 0 "#PWR0107" H 4650 5700 50  0001 C CNN
-F 1 "-BATT" V 4665 5978 50  0000 L CNN
-F 2 "" H 4650 5850 50  0001 C CNN
-F 3 "" H 4650 5850 50  0001 C CNN
-	1    4650 5850
+P 6550 5850
+F 0 "#PWR0107" H 6550 5700 50  0001 C CNN
+F 1 "-BATT" V 6565 5978 50  0000 L CNN
+F 2 "" H 6550 5850 50  0001 C CNN
+F 3 "" H 6550 5850 50  0001 C CNN
+	1    6550 5850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5400 4400 5400 4450
-Wire Wire Line
-	4650 5850 4600 5850
 $Comp
 L power:+BATT #PWR0108
 U 1 1 5EBDB585
@@ -891,7 +881,7 @@ Wire Wire Line
 	4850 8900 4850 8250
 Connection ~ 4850 8250
 Wire Wire Line
-	4850 8250 3450 8250
+	4850 8250 3750 8250
 Wire Wire Line
 	4850 9100 4850 9800
 Connection ~ 4850 9800
@@ -928,7 +918,7 @@ F 3 "~" H 1350 7600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1350 7700 1350 8600
+	1350 7700 1350 8200
 Connection ~ 1350 8600
 $Comp
 L power:+5V #PWR0116
@@ -2029,11 +2019,6 @@ F 3 "~" H 5000 4450 50  0001 C CNN
 	1    5000 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 4450 5200 4450
-Wire Wire Line
-	4800 4450 4600 4450
-Connection ~ 4600 4450
 $Comp
 L Device:C_Small C7
 U 1 1 5FF0271B
@@ -2183,4 +2168,241 @@ Text Notes 1300 6350 1    50   ~ 0
 test 10K
 Wire Wire Line
 	2200 4700 2600 4700
+$Comp
+L Device:R_Small R27
+U 1 1 5F2534D9
+P 5350 4600
+F 0 "R27" H 5409 4646 50  0000 L CNN
+F 1 "20k" H 5409 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5350 4600 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R28
+U 1 1 5F2544D9
+P 5800 4600
+F 0 "R28" H 5859 4646 50  0000 L CNN
+F 1 "20k" H 5859 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5800 4600 50  0001 C CNN
+F 3 "~" H 5800 4600 50  0001 C CNN
+	1    5800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:DMG2301L-7 Q1
+U 1 1 5F2AD49E
+P 6250 4750
+F 0 "Q1" V 6817 4850 50  0000 C CNN
+F 1 "DMG2301L-7" V 6726 4850 50  0000 C CNN
+F 2 "SOT96P240X110-3N" H 6700 4700 50  0001 L CNN
+F 3 "" H 6700 4600 50  0001 L CNN
+F 4 "MOSFET MOSFET BVDSS" H 6700 4500 50  0001 L CNN "Description"
+F 5 "1.1" H 6700 4400 50  0001 L CNN "Height"
+F 6 "621-DMG2301L-7" H 6700 4300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG2301L-7?qs=60RJRzIpcl8mqpUzCaZuxQ%3D%3D" H 6700 4200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 6700 4100 50  0001 L CNN "Manufacturer_Name"
+F 9 "DMG2301L-7" H 6700 4000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6250 4750
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 5F40BC43
+P 5350 5700
+F 0 "R29" H 5409 5746 50  0000 L CNN
+F 1 "10k" H 5409 5655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5350 5700 50  0001 C CNN
+F 3 "~" H 5350 5700 50  0001 C CNN
+	1    5350 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:2SC2712-Y,LF Q3
+U 1 1 5F43AD52
+P 5400 5350
+F 0 "Q3" H 5938 5396 50  0000 L CNN
+F 1 "2SC2712-Y,LF" H 5938 5305 50  0000 L CNN
+F 2 "SOT95P260X140-3N" H 5950 5200 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=19227&prodName=2SC2712" H 5950 5100 50  0001 L CNN
+F 4 "Bipolar Transistors - BJT Transistor Lo Freq 0.15A 50V" H 5950 5000 50  0001 L CNN "Description"
+F 5 "1.4" H 5950 4900 50  0001 L CNN "Height"
+F 6 "757-2SC2712-YLF" H 5950 4800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Toshiba/2SC2712-YLF?qs=OLJpxlzHOSRJVcvCvCq8nA%3D%3D" H 5950 4700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 5950 4600 50  0001 L CNN "Manufacturer_Name"
+F 9 "2SC2712-Y,LF" H 5950 4500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4450 5350 4450
+Wire Wire Line
+	5800 4500 5800 4450
+Connection ~ 5800 4450
+Wire Wire Line
+	5800 4450 6050 4450
+Wire Wire Line
+	5350 4500 5350 4450
+Connection ~ 5350 4450
+Wire Wire Line
+	5350 4450 5800 4450
+Wire Wire Line
+	5350 4700 5350 4800
+Wire Wire Line
+	5350 5000 5350 5350
+Wire Wire Line
+	5350 5350 5400 5350
+Wire Wire Line
+	5350 5350 5350 5600
+Connection ~ 5350 5350
+Wire Wire Line
+	5350 5850 5350 5800
+Wire Wire Line
+	4600 5850 5350 5850
+Wire Wire Line
+	5350 5850 5800 5850
+Wire Wire Line
+	5800 5850 5800 5650
+Connection ~ 5350 5850
+Wire Wire Line
+	5800 5850 6550 5850
+Connection ~ 5800 5850
+Wire Wire Line
+	6650 4450 6750 4450
+Wire Wire Line
+	6250 4750 6250 4850
+Wire Wire Line
+	6250 4850 5800 4850
+Wire Wire Line
+	5800 4850 5800 4700
+Wire Wire Line
+	5800 4850 5800 5050
+Connection ~ 5800 4850
+$Comp
+L SamacSys_Parts:MM3Z6V2T1G Z1
+U 1 1 5F6BF299
+P 5050 4800
+F 0 "Z1" V 5304 4928 50  0000 L CNN
+F 1 "MM3Z6V2T1G" V 5395 4928 50  0000 L CNN
+F 2 "SOD2512X110N" H 5450 4950 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MM3Z2V4T1-D.PDF" H 5450 4850 50  0001 L CNN
+F 4 "ON Semiconductor MM3Z6V2T1G Zener Diode, 6.2V 6% 200 mW SMT 2-Pin SOD-323" H 5450 4750 50  0001 L CNN "Description"
+F 5 "1.1" H 5450 4650 50  0001 L CNN "Height"
+F 6 "863-MM3Z6V2T1G" H 5450 4550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MM3Z6V2T1G?qs=HVbQlW5zcXV6rPxEZErm7g%3D%3D" H 5450 4450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ON Semiconductor" H 5450 4350 50  0001 L CNN "Manufacturer_Name"
+F 9 "MM3Z6V2T1G" H 5450 4250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5050 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 4800 5350 4800
+Wire Wire Line
+	5050 5400 5150 5400
+Wire Wire Line
+	5150 5400 5150 5000
+Wire Wire Line
+	5150 5000 5350 5000
+$Comp
+L autoplanter-cache:Connector_Conn_01x03_Female J6
+U 1 1 5F7B3C80
+P 4000 7500
+F 0 "J6" H 4028 7526 50  0000 L CNN
+F 1 "external regurator" H 4028 7435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4000 7500 50  0001 C CNN
+F 3 "" H 4000 7500 50  0001 C CNN
+	1    4000 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 8350 3700 8350
+Wire Wire Line
+	3700 8350 3700 7500
+Wire Wire Line
+	3700 7500 3800 7500
+Connection ~ 5350 8350
+Wire Wire Line
+	3800 7600 3750 7600
+Wire Wire Line
+	3750 7600 3750 8250
+Connection ~ 3750 8250
+Wire Wire Line
+	3750 8250 3450 8250
+Wire Wire Line
+	3800 7400 3650 7400
+Wire Wire Line
+	3650 7400 3650 8200
+Wire Wire Line
+	3650 8200 1350 8200
+Connection ~ 1350 8200
+Wire Wire Line
+	1350 8200 1350 8600
+$Comp
+L autoplanter-cache:Connector_Conn_01x02_Female J5
+U 1 1 5F88237E
+P 11600 2650
+F 0 "J5" H 11628 2626 50  0000 L CNN
+F 1 "I2C Debug" H 11628 2535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 11600 2650 50  0001 C CNN
+F 3 "" H 11600 2650 50  0001 C CNN
+	1    11600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 2650 11400 2650
+Connection ~ 11000 2650
+Wire Wire Line
+	9600 2750 11400 2750
+Connection ~ 9600 2750
+Wire Wire Line
+	4200 4450 4250 4450
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 5FA6D033
+P 4550 4750
+F 0 "SW3" H 4550 5017 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4550 4926 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1271_DPDT" H 4550 4750 50  0001 C CNN
+F 3 "~" H 4550 4750 50  0001 C CNN
+	1    4550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5000 4600 4950
+Wire Wire Line
+	4600 4950 4250 4950
+Wire Wire Line
+	4250 4950 4250 4750
+Wire Wire Line
+	4250 4450 4250 4750
+Connection ~ 4250 4750
+Wire Wire Line
+	4850 4750 4850 4600
+Wire Wire Line
+	4850 4600 4800 4600
+Wire Wire Line
+	4800 4600 4800 4450
+$Comp
+L autoplanter-cache:Connector_Conn_01x03_Female J7
+U 1 1 5FBFC735
+P 700 4500
+F 0 "J7" V 638 4648 50  0000 L CNN
+F 1 "12v regurator" V 547 4648 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 700 4500 50  0001 C CNN
+F 3 "" H 700 4500 50  0001 C CNN
+	1    700  4500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	350  4700 600  4700
+Wire Wire Line
+	800  4700 1200 4700
+Wire Wire Line
+	700  4700 700  5000
+Wire Wire Line
+	700  5000 1200 5000
+Connection ~ 1200 5000
+Wire Wire Line
+	1200 5000 1200 4950
 $EndSCHEMATC

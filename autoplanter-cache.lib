@@ -486,6 +486,34 @@ X ~ 6 200 -300 100 U 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_2SC2712-Y,LF
+#
+DEF SamacSys_Parts_2SC2712-Y,LF Q 0 30 Y Y 1 F N
+F0 "Q" 550 50 50 H V L CNN
+F1 "SamacSys_Parts_2SC2712-Y,LF" 550 -50 50 H V L CNN
+F2 "SOT95P260X140-3N" 550 -150 50 H I L CNN
+F3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=19227&prodName=2SC2712" 550 -250 50 H I L CNN
+F4 "Bipolar Transistors - BJT Transistor Lo Freq 0.15A 50V" 550 -350 50 H I L CNN "Description"
+F5 "1.4" 550 -450 50 H I L CNN "Height"
+F6 "757-2SC2712-YLF" 550 -550 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Toshiba/2SC2712-YLF?qs=OLJpxlzHOSRJVcvCvCq8nA%3D%3D" 550 -650 50 H I L CNN "Mouser Price/Stock"
+F8 "Toshiba" 550 -750 50 H I L CNN "Manufacturer_Name"
+F9 "2SC2712-Y,LF" 550 -850 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+C 350 0 158 0 1 10 N
+P 2 0 1 6 100 0 300 0 N
+P 2 0 1 6 300 -50 400 -150 N
+P 2 0 1 6 300 50 400 150 N
+P 2 0 1 20 300 100 300 -100 N
+P 2 0 1 6 400 -150 400 -200 N
+P 2 0 1 6 400 150 400 200 N
+P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 -300 100 U 50 50 0 0 P
+X ~ 3 400 300 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_ACT4060ASH-T
 #
 DEF SamacSys_Parts_ACT4060ASH-T PS 0 30 Y Y 1 F N
@@ -539,6 +567,37 @@ X VDD 8 1200 -300 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_DMG2301L-7
+#
+DEF SamacSys_Parts_DMG2301L-7 Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "SamacSys_Parts_DMG2301L-7" 450 50 50 H V L CNN
+F2 "SOT96P240X110-3N" 450 -50 50 H I L CNN
+F3 "" 450 -150 50 H I L CNN
+F4 "MOSFET MOSFET BVDSS" 450 -250 50 H I L CNN "Description"
+F5 "1.1" 450 -350 50 H I L CNN "Height"
+F6 "621-DMG2301L-7" 450 -450 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMG2301L-7?qs=60RJRzIpcl8mqpUzCaZuxQ%3D%3D" 450 -550 50 H I L CNN "Mouser Price/Stock"
+F8 "Diodes Inc." 450 -650 50 H I L CNN "Manufacturer_Name"
+F9 "DMG2301L-7" 450 -750 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+C 250 100 150 0 1 10 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 80 230 120 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 300 200 300 300 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 4 0 1 10 300 100 260 120 260 80 300 100 F
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 300 -200 100 U 50 50 0 0 P
+X ~ 3 300 400 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_KST10MTF
 #
 DEF SamacSys_Parts_KST10MTF IC 0 30 Y Y 1 F N
@@ -585,6 +644,31 @@ X THERM 6 1200 -400 200 L 50 50 0 0 U
 X TIMER 7 1200 -300 200 L 50 50 0 0 U
 X VSS 8 1200 -200 200 L 50 50 0 0 U
 X VBAT 9 1200 -100 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MM3Z6V2T1G
+#
+DEF SamacSys_Parts_MM3Z6V2T1G Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "SamacSys_Parts_MM3Z6V2T1G" 400 250 50 H V L CNN
+F2 "SOD2512X110N" 400 150 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/MM3Z2V4T1-D.PDF" 400 50 50 H I L CNN
+F4 "ON Semiconductor MM3Z6V2T1G Zener Diode, 6.2V 6% 200 mW SMT 2-Pin SOD-323" 400 -50 50 H I L CNN "Description"
+F5 "1.1" 400 -150 50 H I L CNN "Height"
+F6 "863-MM3Z6V2T1G" 400 -250 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/MM3Z6V2T1G?qs=HVbQlW5zcXV6rPxEZErm7g%3D%3D" 400 -350 50 H I L CNN "Mouser Price/Stock"
+F8 "ON Semiconductor" 400 -450 50 H I L CNN "Manufacturer_Name"
+F9 "MM3Z6V2T1G" 400 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -677,6 +761,26 @@ X K 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Switch_SW_DIP_x01
+#
+DEF Switch_SW_DIP_x01 SW 0 0 Y N 1 F N
+F0 "SW" 0 150 50 H V C CNN
+F1 "Switch_SW_DIP_x01" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW?DIP?x1*
+$ENDFPLIST
+DRAW
+C -80 0 20 0 0 0 N
+C 80 0 20 0 0 0 N
+S -150 100 150 -100 0 1 10 f
+P 2 0 0 0 -60 5 93 46 N
+X ~ 1 -300 0 200 R 50 50 1 1 P
+X ~ 2 300 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Switch_SW_Push_Dual
 #
 DEF Switch_SW_Push_Dual SW 0 40 Y N 1 F N
@@ -701,6 +805,49 @@ X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
 X 3 3 -200 -200 100 R 50 50 0 1 P
 X 4 4 200 -200 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# autoplanter-cache_Connector_Conn_01x02_Female
+#
+DEF autoplanter-cache_Connector_Conn_01x02_Female J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "autoplanter-cache_Connector_Conn_01x02_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# autoplanter-cache_Connector_Conn_01x03_Female
+#
+DEF autoplanter-cache_Connector_Conn_01x03_Female J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "autoplanter-cache_Connector_Conn_01x03_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
